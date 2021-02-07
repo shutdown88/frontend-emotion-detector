@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="mphtools-feature"
+      content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck"
+    />
+    <title>Emotion detector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="video-container">
+          <video id="video-player" muted playsinline></video>
+          <div class="video-off">
+            <h1>Press the button to start</h1>
+          </div>
+        </div>
+        <div class="dominant-emotion-container">
+          <h1>Dominant Emotion</h1>
+          <div class="emotion-container">
+            <div class="emotion-emoji"></div>
+            <div class="dominant-emotion"></div>
+          </div>
+        </div>
+      </div>
+      <div class="controls-container">
+        <button id="start-stop" disabled>▶️</button>
+      </div>
+    </div>
+
+    <script src="https://sdk.morphcast.com/mphtools/v1.0/mphtools.js"></script>
+    <script src="https://ai-sdk.morphcast.com/v1.14/ai-sdk.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
